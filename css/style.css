@@ -39,6 +39,6 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .slide .slide-img{width: 300%; height: 100%; display: flex; position: absolute; top: 0; left: 0;}
 .slide .slide-img>a {width: 33.33%; height: 100%; padding: 20px 0;}
 .slide .slide-img img {height: 100%;}
-.slide .dot {position: absolute; display: flex; width: 33.33%; height: 100%; text-align: center; right: 50%;}
+.slide .dot {position: absolute; display: flex; top:680px; right: 50%;}
 .slide .dot li {width: 11px; height: 11px; border-radius: 50%; background: transparent; border: 1px solid #888; margin: 0 3px;}
 .slide .dot span{}  
