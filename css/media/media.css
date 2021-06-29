@@ -1,5 +1,9 @@
 @media screen and (max-width:1280px){
-
+ .center {padding: 0 20px;}
+ .header .nav>li {padding: 0 15px;}
+ .header .nav>li>a {font-size: 14px;}
+ .header .logo img {width: 85%;}
+ .header .nav .notice li {padding: 0 15px;}
 }
 
 @media screen and (max-width:768px){
