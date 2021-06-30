@@ -1,4 +1,4 @@
-.wrapper {width: 100%; height: 2000px; _overflow: hidden; /*overflow: 거의 다 작성이 된 뒤에 살려주는 태그*/}
+.wrapper {width: 100%; height: auto; _overflow: hidden; /*overflow: 거의 다 작성이 된 뒤에 살려주는 태그*/}
 
 /* Section Style code */
 
@@ -12,7 +12,8 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .rel{position: relative; display: flex; justify-content: space-between; align-items: center;}
 .header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 200px; z-index:999999; background-color: transparent; position: absolute; transition: all 0.5s;}
 .fixed-nav {width: 100%; top: 0; left:0; height: 100px; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:99;} /*스크롤 이벤트 클래스 - box에 추가*/
-.header .nav {display: flex; margin-right: 50px;}
+.header .logo img {margin: auto;}
+.header .nav {display: flex;}
 .header .nav>li{position: relative; padding: 0 24px;}
 .header .nav>li>a{font-size: 16px;}
 
@@ -36,10 +37,10 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .header .icon a i{font-size: 22px;}
 
 .banner {width: 100%; height: auto;}
-.slide {position: relative; width: 100%; height: 750px; background: #f9f1e9; padding-bottom: 80px; overflow: hidden;}
+.slide {position: relative; width: 100%; height: 0; background: #f9f1e9; padding-top: calc(300 / 600 * 100%); overflow: hidden;}
 .slide .slide-img{width: 300%; height: 100%; display: flex; position: absolute; top: 0; left: 0;}
 .slide .slide-img>a {width: 33.33%; height: 100%; _padding: 20px 0; position: relative;}
-.slide .slide-img img {width:90%; _height: 100%; margin: auto;}
+.slide .slide-img img {width:90%; margin: auto;}
 .slide .slide-img>a>.bannertxt1,.slide .slide-img>a>.bannertxt2,.slide .slide-img>a>.bannertxt3 {position: absolute; top:50%; left: 5%;}
 .slide .slide-img>a>.bannertxt1,.slide .slide-img>a>.bannertxt3 {right: 10%; text-align: right;}
 .slide .slide-img>a h2 {font-size: 24px; font-weight: 400;}
@@ -53,7 +54,7 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 
 /*Middle Contents CSS Style*/
 .mid {width: 100%; height: auto; margin: 100px 0; }
-.mid .mid-txt {opacity: 0; width: 100%; height: 100%;}
+.mid .mid-txt {opacity: 1; width: 100%; height: 100%;}
 
 .fade-in {animation-name: fadeIn; animation-duration: 2s; animation-timing-function: ease-out;}
 
@@ -82,3 +83,32 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .mid .mid-con .each-mid div {text-align: center;}
 .mid .mid-con .each-mid div h2{font-size: 23px; font-weight: 300;}
 .mid .mid-con .each-mid div h4 {font-weight: 300; padding: 10px 0; color: #888;}
+
+.best-item {width: 100%; background: #f5f2ef;}
+.best-item .best-txt {text-align: center; padding-top: 100px;}
+.best-item .best-txt p:nth-child(1) {font-size: 12px; font-weight: 400; letter-spacing: 2px;}
+.best-item .best-txt p:nth-child(2) {font-size: 34px; font-weight: 400; padding: 10px 0 10px;}
+.best-item .line {width: 18px; height: 1px; background-color:#aaa; margin: 30px auto 30px;}
+
+.best-item .best-con {width: 100%;}
+.best-item .best-con .best-btn {text-align: center;}
+.best-item .best-con .best-btn span{font-size: 18px; font-weight: 400; padding: 0 10px;}
+.best-detail {display: flex; padding: 40px 0;}
+.best-detail .detail-con {width: 100%; text-align: center; position: relative;}
+.best-detail .detail-con a {width: 100%;}
+.best-detail .detail-con a img{width: 80%; border-radius: 50%; margin: auto;}
+.best-detail .detail-con a p {position: absolute; top: 0; left: 0; background: black; color: white; padding: 20px; border-radius: 50%;}
+.best-detail .detail-con h2 {font-weight: 300; font-size: 18px; padding: 20px 0 10px 0; color: #555555;}
+.best-detail .detail-con h4 {font-weight: 300; color: #999999;}
+.best-detail .detail-con h3 {font-size: 17px; font-weight: 300; padding-top: 10px;}
+
+
+.magazine {width: 100%; background: #fff;}
+.magazine .magazine-txt {text-align: center; padding-top: 100px;}
+.magazine .magazine-txt p:nth-child(1) {font-size: 12px; font-weight: 400; letter-spacing: 2px;}
+.magazine .magazine-txt p:nth-child(2) {font-size: 34px; font-weight: 400; padding: 10px 0 10px;}
+.magazine .line {width: 18px; height: 1px; background-color:#aaa; margin: 30px auto 30px;}
+.magazine .magazine-con {width: 100%; display: flex;}
+.magazine .magazine-con .con-detail {width: 25%;}
+.magazine .magazine-con .con-detail a {width: 100%; height: 100%;}
+.magazine .magazine-con .con-detailbox a:nth-child(1) {background-image: url(/renewal/img/magazine-img1.jpg); width: 100%; background-position: center center; background-size: cover; padding-bottom: 100px;}
