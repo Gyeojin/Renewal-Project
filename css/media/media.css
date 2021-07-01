@@ -2,25 +2,27 @@
  .center {padding: 0 20px;}
  .header .nav>li {padding: 0 10px;}
  .header .nav .line {margin: 0 5px;}
- .header .logo img {width: 85%;}
  .header .nav .notice li {padding: 0 10px;}
 }
 
-@media screen and (max-width:980px){
+@media screen and (max-width:985px){
   .header {height: 150px;}
-  .header .logo img {width: 70%;}
   .header .nav>li {padding: 0 6px;}
+  .header .nav .submenu li {font-size: 13px;}
   .header .nav .notice li {padding: 0 6px;}
   .header .icon a i {font-size: 20px;}
   .slide .slide-img>a h2 {font-size: 20px;}
   .fixed-nav {height: 100px;}
+  
 }
 
-@media screen and (max-width:920px){
+@media screen and (max-width:925px){
   .header .nav>li>a {font-size: 13px;}
+  .header .nav .submenu li a {font-size: 12px;}
   .header .nav .notice li a {font-size: 13px;}
   .header .icon a {padding: 0 6px;}
-  .header .icon a i {font-size: 18px;}
+  .header .icon a i {font-size: 16px;}
+  .header .icon .my .submenu>li>a {font-size: 12px;}
   .mid .mid-txt p:nth-child(2) {font-size: 30px;}
   .mid .mid-txt p:nth-child(3) {font-size: 14px;}
   .mid .mid-con .each-mid div h2 {font-size: 20px;}
@@ -33,10 +35,13 @@
 
 @media screen and (max-width:785px){
   .slide .slide-img>a h2 {font-size: 18px;}
-  section div.three-layout>div:nth-child(1){width: 50%;}
-  section div.three-layout>div:nth-child(2){width: 50%;}
-  section div.three-layout>div:nth-child(3){width: 100%;}
-  section div.four-layout>div {width: 50%;}
+  .mid .mid-con .each-mid:nth-child(1){width: 50%;}
+  .mid .mid-con .each-mid:nth-child(2){width: 50%;}
+  .mid .mid-con .each-mid:nth-child(3){width: 50%; margin: auto; padding-top: 30px;}
+  .magazine .magazine-con .con-detailbox:nth-child(1) {width: 50%; height: 50%;}
+  .magazine .magazine-con .con-detailbox:nth-child(2) {width: 50%; height: 50%}
+  .magazine .magazine-con .con-detailbox:nth-child(3) {width: 50%; height: 50%}
+  .magazine .magazine-con .con-detailbox:nth-child(4) {width: 50%; height: 50%}
 }
 
 @media screen and (max-width:510px){

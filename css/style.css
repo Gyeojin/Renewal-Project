@@ -12,12 +12,13 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .rel{position: relative; display: flex; justify-content: space-between; align-items: center;}
 .header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 200px; z-index:999999; background-color: transparent; position: absolute; transition: all 0.5s;}
 .fixed-nav {width: 100%; top: 0; left:0; height: 100px; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:99;} /*스크롤 이벤트 클래스 - box에 추가*/
-.header .logo img {margin: auto;}
+.header .logo {width: 20%;}
+.header .logo img {width: 100%;}
 .header .nav {display: flex;}
 .header .nav>li{position: relative; padding: 0 24px;}
 .header .nav>li>a{font-size: 16px;}
 
-.header .nav .submenu {opacity: 0; visibility: hidden; position: absolute; top: 30px; left: 0; width: 100%; height: auto; padding: 10px 0; background-color: #1a1a1a; border-radius: 5px; transition:all 0.4s}
+.header .nav .submenu {opacity: 1; visibility: visible; position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 140%; height: auto; padding: 10px 0; background-color: #1a1a1a; border-radius: 5px; transition:all 0.4s}
 .header .nav>li>a:hover +.submenu{opacity: 1; visibility: visible;}
 .header .nav .submenu li {display: flex; flex-direction: column; align-items: center;}
 .header .nav .submenu li a {padding: 5px 0; color: #888;}
@@ -27,7 +28,7 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .header .nav .notice li a{color:#888;}
 .header .icon {display: flex;}
 .header .icon .my {position: relative;}
-.header .icon .my .submenu {opacity: 0; visibility: hidden; position: absolute; top: 30px; left: -50px; width: 400%; height: auto; background-color: #fff; border-radius: 5px; box-shadow: 0 1px 7px rgba(0, 0, 0, 10%); transition:all 0.4s}
+.header .icon .my .submenu {opacity: 0; visibility: hidden; position: absolute; top: 30px; left: 50%; transform:translateX(-50%); width: 400%; height: auto; background-color: #fff; border-radius: 5px; box-shadow: 0 1px 7px rgba(0, 0, 0, 10%); transition:all 0.4s}
 .header .icon .my .submenu>li>a {padding: 5px 0; color: #888;}
 .header .icon>li>a:hover +.submenu{opacity: 1; visibility: visible;}
 .header .icon .my .submenu>li {padding: 10px;}
@@ -76,8 +77,8 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .mid .mid-txt p:nth-child(4) {font-size: 10px; font-weight: 300; color: #888; padding: 20px;}
 
 
-.mid .mid-con {width: 100%; height: 100%; display: flex; margin: 90px 0 0 0; }
-.mid .mid-con .each-mid {width: 33.33%; height: auto; margin: 0 8px;}
+.mid .mid-con {width: 100%; height: 100%; display: flex; margin: 90px 0 0 0; flex-wrap: wrap;}
+.mid .mid-con .each-mid {width: 33.33%; height: auto; _margin: 0 8px;}
 
 .mid .mid-con .each-mid a img {width: 100%; height: auto;}
 .mid .mid-con .each-mid div {text-align: center;}
@@ -103,12 +104,19 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .best-detail .detail-con h3 {font-size: 17px; font-weight: 300; padding-top: 10px;}
 
 
-.magazine {width: 100%; background: #fff;}
+.magazine {width: 100%; background: #fff; margin-bottom: 200px;}
 .magazine .magazine-txt {text-align: center; padding-top: 100px;}
 .magazine .magazine-txt p:nth-child(1) {font-size: 12px; font-weight: 400; letter-spacing: 2px;}
 .magazine .magazine-txt p:nth-child(2) {font-size: 34px; font-weight: 400; padding: 10px 0 10px;}
 .magazine .line {width: 18px; height: 1px; background-color:#aaa; margin: 30px auto 30px;}
-.magazine .magazine-con {width: 100%; display: flex;}
-.magazine .magazine-con .con-detail {width: 25%;}
-.magazine .magazine-con .con-detail a {width: 100%; height: 100%;}
-.magazine .magazine-con .con-detailbox a:nth-child(1) {background-image: url(/renewal/img/magazine-img1.jpg); width: 100%; background-position: center center; background-size: cover; padding-bottom: 100px;}
+.magazine .magazine-con {width: 100%;}
+.magazine .magazine-con .con-detail {width: 100%; display: flex; flex-wrap: wrap;}
+.magazine .magazine-con .con-detail a {width: 100%; height: 100%; text-align: center;}
+.magazine .magazine-con .con-detailbox {width: 25%;}
+.magazine .magazine-con .con-detailbox>a{background-image: url(/renewal/img/magazine-img1.jpg); background-position: center center; background-size: cover; padding-bottom: 85%; display: block;}
+.magazine .magazine-con .con-detail-txt {width: 100%; border: 1px solid #eee;}
+.magazine .magazine-con .con-detail-txt a:nth-child(1){font-size: 17px; font-weight: 400; display: block; padding: 20px 0 5px 0;}
+.magazine .magazine-con .con-detail-txt a:nth-child(2) {display: block; font-size: 12px; padding-bottom: 20px;}
+
+.magazine .magazine-con .con-detailbox:nth-child(2)>a{background-image: url(/renewal/img/magazine-img2.jpg);}
+.magazine .magazine-con .con-detailbox:nth-child(3)>a{background-image: url(/renewal/img/magazine-img3.jpg);}.magazine .magazine-con .con-detailbox:nth-child(4)>a{background-image: url(/renewal/img/magazine-img4.jpg);}
