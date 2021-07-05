@@ -24,16 +24,20 @@
   .header .icon a i {font-size: 16px;}
   .header .icon .my .submenu>li>a {font-size: 12px;}
   .mid .mid-txt p:nth-child(2) {font-size: 30px;}
-  .mid .mid-txt p:nth-child(3) {font-size: 14px;}
+  .mid .mid-txt p:nth-child(3) {font-size: 14px; line-height: 25px;}
   .mid .mid-con .each-mid div h2 {font-size: 20px;}
   .best-item .best-txt p:nth-child(2) {font-size: 30px;}
   .best-item .best-con .best-btn span {font-size: 16px;}
   .best-detail .detail-con h2 {font-size: 16px;}
   .best-detail .detail-con h3 {font-size: 16px;}
+  .best-detail .detail-con .detail-img span p {font-size: 11px;}
+  .magazine .magazine-txt p:nth-child(2) {font-size: 30px;}
   
 }
 
 @media screen and (max-width:785px){
+  .header .nav>li>a{font-size: 12px;}
+  .header .nav .notice li a{font-size: 12px;}
   .slide .slide-img>a h2 {font-size: 18px;}
   .mid .mid-con .each-mid:nth-child(1){width: 50%;}
   .mid .mid-con .each-mid:nth-child(2){width: 50%;}
@@ -42,7 +46,13 @@
   .magazine .magazine-con .con-detailbox:nth-child(2) {width: 50%; height: 50%}
   .magazine .magazine-con .con-detailbox:nth-child(3) {width: 50%; height: 50%}
   .magazine .magazine-con .con-detailbox:nth-child(4) {width: 50%; height: 50%}
+  
 }
+
+@media screen and (max-width:785px){
+  .slide .slide-img>a h2{font-size: 16px;}
+}
+
 
 @media screen and (max-width:510px){
   section div.three-layout>div:nth-child(1){width: 100%;}

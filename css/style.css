@@ -18,23 +18,22 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .header .nav>li{position: relative; padding: 0 24px;}
 .header .nav>li>a{font-size: 16px;}
 
-.header .nav .submenu {opacity: 1; visibility: visible; position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 140%; height: auto; padding: 10px 0; background-color: #1a1a1a; border-radius: 5px; transition:all 0.4s}
-.header .nav>li>a:hover +.submenu{opacity: 1; visibility: visible;}
+.header .nav .submenu {opacity: 0; visibility: hidden; position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 140%; height: auto; background-color: #1a1a1a; border-radius: 5px; transition:all 0.5s}
+.header .nav>li:hover .submenu{opacity: 1; visibility: visible;}
 .header .nav .submenu li {display: flex; flex-direction: column; align-items: center;}
-.header .nav .submenu li a {padding: 5px 0; color: #888;}
+.header .nav .submenu li a {padding: 10px 0; color: #888; width: 100%; text-align: center;}
 .header .nav .line {border-left: 2px solid #999; margin: 0 10px;}
 .header .nav .notice {display: flex;}
 .header .nav .notice li {padding: 0 20px;}
 .header .nav .notice li a{color:#888;}
 .header .icon {display: flex;}
 .header .icon .my {position: relative;}
-.header .icon .my .submenu {opacity: 0; visibility: hidden; position: absolute; top: 30px; left: 50%; transform:translateX(-50%); width: 400%; height: auto; background-color: #fff; border-radius: 5px; box-shadow: 0 1px 7px rgba(0, 0, 0, 10%); transition:all 0.4s}
-.header .icon .my .submenu>li>a {padding: 5px 0; color: #888;}
-.header .icon>li>a:hover +.submenu{opacity: 1; visibility: visible;}
-.header .icon .my .submenu>li {padding: 10px;}
+.header .icon .my .submenu {opacity: 0; visibility: hidden; position: absolute; top: 40px; left: 50%; transform:translateX(-50%); width: 400%; height: auto; background-color: #fff; border-radius: 5px; box-shadow: 0 1px 7px rgba(0, 0, 0, 10%); transition:all 0.4s}
+.header .icon .my .submenu>li>a {padding: 10px 0; color: #888;}
+.header .icon>li:hover .submenu{opacity: 1; visibility: visible;}
 .header .icon .my .submenu>li>a {color: #888;}
 
-.header .icon a{padding: 0 10px; display: block; text-align: center;}
+.header .icon a{padding: 5px 10px; display: block; text-align: center;}
 .header .icon a i{font-size: 22px;}
 
 .banner {width: 100%; height: auto;}
@@ -54,15 +53,17 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .slide .dot .dot-click {background: #333;}
 
 /*Middle Contents CSS Style*/
-.mid {width: 100%; height: auto; margin: 100px 0; }
-.mid .mid-txt {opacity: 1; width: 100%; height: 100%;}
+.mid {width: 100%; height: auto; padding: 100px 0; }
+.mid .mid-txt {opacity: 0; width: 100%; height: 100%;}
 
-.fade-in {animation-name: fadeIn; animation-duration: 2s; animation-timing-function: ease-out;}
+/* .hover-evt {left: 0;} */
+
+.fade-in {animation-name: fadeIn; animation-iteration-count:1; animation-duration: 2s; animation-timing-function: ease-out; animation-fill-mode: forwards;}
 
 @keyframes fadeIn {
   0% {
     margin-top: 200px;
-    _opacity : 0;
+    opacity : 0;
   }
   100%{
     margin: 0;
@@ -77,15 +78,16 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .mid .mid-txt p:nth-child(4) {font-size: 10px; font-weight: 300; color: #888; padding: 20px;}
 
 
-.mid .mid-con {width: 100%; height: 100%; display: flex; margin: 90px 0 0 0; flex-wrap: wrap;}
+.mid .mid-con {opacity: 0; width: 100%; height: 100%; display: flex; margin: 90px 0 0 0; flex-wrap: wrap;}
 .mid .mid-con .each-mid {width: 33.33%; height: auto; _margin: 0 8px;}
 
-.mid .mid-con .each-mid a img {width: 100%; height: auto;}
+.mid .mid-con .each-mid a img {width: 100%; height: auto; transition: all 0.5s;}
+.mid .mid-con .each-mid a img:hover {opacity: 0.6;}
 .mid .mid-con .each-mid div {text-align: center;}
 .mid .mid-con .each-mid div h2{font-size: 23px; font-weight: 300;}
 .mid .mid-con .each-mid div h4 {font-weight: 300; padding: 10px 0; color: #888;}
 
-.best-item {width: 100%; background: #f5f2ef;}
+.best-item {opacity: 0; width: 100%; background: #f5f2ef;}
 .best-item .best-txt {text-align: center; padding-top: 100px;}
 .best-item .best-txt p:nth-child(1) {font-size: 12px; font-weight: 400; letter-spacing: 2px;}
 .best-item .best-txt p:nth-child(2) {font-size: 34px; font-weight: 400; padding: 10px 0 10px;}
@@ -95,16 +97,19 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .best-item .best-con .best-btn {text-align: center;}
 .best-item .best-con .best-btn span{font-size: 18px; font-weight: 400; padding: 0 10px;}
 .best-detail {display: flex; padding: 40px 0;}
-.best-detail .detail-con {width: 100%; text-align: center; position: relative;}
-.best-detail .detail-con a {width: 100%;}
-.best-detail .detail-con a img{width: 80%; border-radius: 50%; margin: auto;}
+.best-detail .detail-con {width: 100%; text-align: center;}
+.best-detail .detail-con .detail-img{position: relative; width: 90%; margin: auto;}
+.best-detail .detail-con .detail-img span {position: absolute; top: 0; left: 0; width: 25%; height: 25%; background: #000; border-radius: 50%;}
+.best-detail .detail-con .detail-img span p{color: #fff; padding: 40% 0; font-size: 12px; font-weight: 300; position: absolute; left: 50%; transform: translateX(-50%);}
+.best-detail .detail-con a {width: 100%; display: block;}
+.best-detail .detail-con a img{width: 100%; border-radius: 50%; margin: auto;}
 .best-detail .detail-con a p {position: absolute; top: 0; left: 0; background: black; color: white; padding: 20px; border-radius: 50%;}
 .best-detail .detail-con h2 {font-weight: 300; font-size: 18px; padding: 20px 0 10px 0; color: #555555;}
 .best-detail .detail-con h4 {font-weight: 300; color: #999999;}
 .best-detail .detail-con h3 {font-size: 17px; font-weight: 300; padding-top: 10px;}
 
 
-.magazine {width: 100%; background: #fff; margin-bottom: 200px;}
+.magazine {opacity: 0; width: 100%; background: #fff; padding-bottom: 100px;}
 .magazine .magazine-txt {text-align: center; padding-top: 100px;}
 .magazine .magazine-txt p:nth-child(1) {font-size: 12px; font-weight: 400; letter-spacing: 2px;}
 .magazine .magazine-txt p:nth-child(2) {font-size: 34px; font-weight: 400; padding: 10px 0 10px;}
@@ -112,11 +117,47 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .magazine .magazine-con {width: 100%;}
 .magazine .magazine-con .con-detail {width: 100%; display: flex; flex-wrap: wrap;}
 .magazine .magazine-con .con-detail a {width: 100%; height: 100%; text-align: center;}
-.magazine .magazine-con .con-detailbox {width: 25%;}
-.magazine .magazine-con .con-detailbox>a{background-image: url(/renewal/img/magazine-img1.jpg); background-position: center center; background-size: cover; padding-bottom: 85%; display: block;}
+.magazine .magazine-con .con-detailbox {width: 25%; height: 100%; transition: all 0.4s;}
+.magazine .magazine-con .con-detailbox:hover{box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.3);}
+
+.magazine .magazine-con .con-detailbox>a{background-image: url(/renewal/img/magazine-img1.jpg); background-position: center center; background-size: cover; padding-bottom: 100%; display: block;}
 .magazine .magazine-con .con-detail-txt {width: 100%; border: 1px solid #eee;}
 .magazine .magazine-con .con-detail-txt a:nth-child(1){font-size: 17px; font-weight: 400; display: block; padding: 20px 0 5px 0;}
 .magazine .magazine-con .con-detail-txt a:nth-child(2) {display: block; font-size: 12px; padding-bottom: 20px;}
 
 .magazine .magazine-con .con-detailbox:nth-child(2)>a{background-image: url(/renewal/img/magazine-img2.jpg);}
 .magazine .magazine-con .con-detailbox:nth-child(3)>a{background-image: url(/renewal/img/magazine-img3.jpg);}.magazine .magazine-con .con-detailbox:nth-child(4)>a{background-image: url(/renewal/img/magazine-img4.jpg);}
+
+.video {opacity: 0; width: 100%; background: #f6f8fb; padding-bottom: 150px;border-bottom: 1px solid #eee;}
+.video .video-txt {width: 100%; text-align: center;}
+.video .video-txt p:nth-child(1){font-size: 12px; font-weight: 400; letter-spacing: 2px; padding-top: 100px; color: #41556b;}
+.video .video-txt p:nth-child(2){font-size: 34px; font-weight: 400; padding: 10px 0 10px; color: #41556b;}
+.video .video-txt p:nth-child(3){font-size: 16px; font-weight: 300; line-height: 1.6; color: #41556b;}
+.video .video-txt a {width: 100%; padding: 20px 0; display: block;}
+.video .video-box {width: 100%; height: 100%; overflow: hidden;}
+.video .video-box .vbox-detail {position: relative; _width: 1180px; padding-bottom: 45%; overflow: hidden; margin: auto;}
+.video .video-box iframe {position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%;}
+
+footer {width: 100%;}
+.bankinfo {width: 100%; background: #fff; padding: 40px 0;}
+.bankinfo .top {width: 100%; display: flex; align-items: center; text-align: center;}
+.bankinfo .top ul {width: 33.33%;}
+.bankinfo .top ul li {width: 100%;}
+.bankinfo .top ul li a {display: block; padding: 5px 0; color: #777;}
+.bankinfo .top ul li a:nth-child(4){color: #333;}
+.bankinfo .top div {width: 33.33%;}
+.bankinfo .top .phone {border-left: 1px solid #eee; border-right: 1px solid #eee;}
+.bankinfo .top .phone h3,footer .top .bank h3 {font-size: 16px; color: #777; font-weight: 400; padding-bottom: 8px;}
+.bankinfo .top .phone h2 {font-size: 22px; font-weight: 400; letter-spacing: 0.05rem; padding-bottom: 8px;}
+.bankinfo .top .phone p,footer .top .bank p {line-height: 1.5;  font-weight: 300; padding-bottom: 5px;}
+.bankinfo .top .phone a,footer .top .bank a {padding: 3px 0; color: #777; font-weight: 300;}
+.bankinfo .top .phone a i {font-size: 18px; padding: 0 3px; transition: all 0.4s;}
+.bankinfo .top .phone a i:hover {opacity: 0.6;}
+
+.ft-center {max-width: 1380px; margin: auto;}
+.corp-info {width: 100%; background: #f6f8fb; text-align: center; padding: 50px 0;}
+.corp-info p {display: inline-block; padding: 3px 0;}
+.corp-info p .tit {color: #aaa; font-size: 13px; font-weight: 300; padding: 0 3px;}
+.corp-info p .subtxt,.corp-info p a {font-size: 13px; font-weight: 300;}
+.corp-info p .tit:nth-child(9) {padding-top: 5px;}
+.corp-info p .tit:nth-child(9) span {font-size: 12px;}

@@ -1,14 +1,51 @@
+document.cookie = "safeCookie1=foo; SameSite=Lax"; document.cookie = "safeCookie2=foo"; document.cookie = "crossCookie=bar; SameSite=None; Secure";
+
 
 //Scroll Menu Fixed Code
 
 function fixNav() {
   const nav = document.querySelector('.header');
+  const midTxt = document.querySelector('.mid-txt');
+  const midCon = document.querySelector('.mid-con');
+  const bestItem = document.querySelector('.best-item');
+  const magaZine = document.querySelector('.magazine');
+  const videoBox = document.querySelector('.video');
   const nav1 = window.pageYOffset; //스크롤값 알려줌
-  console.log(nav1);
+
   if (nav1 > 0) {
     nav.classList.add('fixed-nav'); 
   } else if(window.scrollY == 0) {
     nav.classList.remove('fixed-nav'); 
+  }
+
+  if (nav1 >= 200) {
+    midTxt.classList.add('fade-in');
+  } else {
+    return;
+  }
+  
+  if (nav1 >= 600){
+    midCon.classList.add('fade-in');
+  } else {
+    return;
+  }
+  
+  if (nav1 >= 1200){
+    bestItem.classList.add('fade-in');
+  } else {
+    return;
+  }
+  
+  if (nav1 >= 2200){
+    magaZine.classList.add('fade-in');
+  } else {
+    return;
+  }
+  
+  if (nav1 >= 2900){
+    videoBox.classList.add('fade-in');
+  } else {
+    return;
   }
 }
 
@@ -40,16 +77,8 @@ function slider(values){
     dots[i].classList.remove('dot-click');
     dots[values].classList.add('dot-click');
   }
-  current=values;
+  current=values;   
 }
-
-  
-
-// % 나머지 연산자  % 3 0,1,2
-// for(let i = 0; i < dots.length; i++){
-//   console.log(dots[i]);
-// }
-// slider(current);
 
 slider(current);
 
@@ -63,21 +92,8 @@ function startSlide(){
 }
 startSlide();
 
+// false 전역설정
+// 스크롤이벤트 false값 할당
+// if조건 실행 시 스크롤이벤트를 true로 바꿔주고
+// 이벤트가 true일 때만 이벤트 실행, 아니면 멈추는걸로
 
-//Scroll fadeIn Code
-//true, false -> 스크롤 내렸을 때 false 로 바뀌게 하는 법
-
-let result = 
-
-function midFadein() {
-  const midTxt = document.querySelector('.mid-txt');
-  const midCon = document.querySelector('.mid-con');
-  const midScroll = window.pageYOffset; //스크롤값 알려줌
-  //console.log(midScroll);
-  if (midScroll >= 400) {
-    midTxt.classList.add('fade-in'); 
-  } else {
-    return false;
-  }
-}
-midFadein();
