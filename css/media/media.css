@@ -39,9 +39,9 @@
   .header .nav>li>a{font-size: 12px;}
   .header .nav .notice li a{font-size: 12px;}
   .slide .slide-img>a h2 {font-size: 18px;}
-  .mid .mid-con .each-mid:nth-child(1){width: 50%;}
+  /*.mid .mid-con .each-mid:nth-child(1){width: 50%;}
   .mid .mid-con .each-mid:nth-child(2){width: 50%;}
-  .mid .mid-con .each-mid:nth-child(3){width: 50%; margin: auto; padding-top: 30px;}
+  .mid .mid-con .each-mid:nth-child(3){width: 50%; margin: auto; padding-top: 30px;}*/
   .magazine .magazine-con .con-detailbox:nth-child(1) {width: 50%; height: 50%;}
   .magazine .magazine-con .con-detailbox:nth-child(2) {width: 50%; height: 50%}
   .magazine .magazine-con .con-detailbox:nth-child(3) {width: 50%; height: 50%}
@@ -49,8 +49,19 @@
   
 }
 
-@media screen and (max-width:785px){
+@media screen and (max-width:630px){
+  .slide {padding-top: calc(300 / 490 * 100%);}
+  .slide .slide-img {top: 10%;}
   .slide .slide-img>a h2{font-size: 16px;}
+  .mid .mid-txt p:nth-child(2) {font-size: 28px;}
+  .mid .mid-con .each-mid div h2 {font-size: 18px;}
+  .mid .mid-con .each-mid div h4 {font-size: 12px;}
+  .best-item .best-txt p:nth-child(2){font-size: 28px;}
+  .magazine .magazine-txt p:nth-child(2) {font-size: 28px;}
+  .video .video-txt p:nth-child(2) {font-size: 28px;}
+  .video .video-txt p:nth-child(3) {font-size: 14px;}
+  .bankinfo .top ul li a {font-size: 12px;}
+  
 }
 
 
