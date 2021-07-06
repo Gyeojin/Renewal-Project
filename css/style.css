@@ -161,3 +161,10 @@ footer {width: 100%;}
 .corp-info p .subtxt,.corp-info p a {font-size: 13px; font-weight: 300;}
 .corp-info p .tit:nth-child(9) {padding-top: 5px;}
 .corp-info p .tit:nth-child(9) span {font-size: 12px;}
+
+
+/* Detail Page Style Code */
+.detail-box-top {width: 100%; display: flex; align-items: center; justify-content: space-between;}
+.detail-box-top .product-image {width: 50%;}
+.detail-box-top .product-image img{width: 100%;}
+.detail-box-top .product-txt {width: 50%;}

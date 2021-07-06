@@ -11,6 +11,7 @@ function fixNav() {
   const magaZine = document.querySelector('.magazine');
   const videoBox = document.querySelector('.video');
   const nav1 = window.pageYOffset; //스크롤값 알려줌
+  //console.log(nav1);
 
   if (nav1 > 0) {
     nav.classList.add('fixed-nav'); 

@@ -125,7 +125,7 @@
             <div class="best-detail">
               <div class="detail-con">
                 <div class="detail-img">
-                  <a href="#"><img src="/renewal/img/best-con1.jpg" alt="best-item"></a>
+                  <a href="/renewal/pages/detail_page.php"><img src="/renewal/img/best-con1.jpg" alt="best-item"></a>
                   <span><p class="eng">BEST1</p></span>
                 </div>
                 <h2 class="eng">상품이름</h2>

@@ -1,6 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm watching you</title>
+
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/renewal/lib/ionicons/css/ionicons.min.css">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Serif+KR:wght@200;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Style Frameworks -->
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/renewal/css/reset.css">
+  <link rel="stylesheet" href="/renewal/css/style.css">
+  <link rel="stylesheet" href="/renewal/css/media/media.css">
+</head>
+
+
+<body>
   <div class="header">
     <div class="center rel">
-      <a href="#" class="logo"><img src="/renewal/img/logo_baraboda.png" alt="logo"></a>
+      <a href="http://localhost/renewal/" class="logo"><img src="/renewal/img/logo_baraboda.png" alt="logo"></a>
       <ul class="nav eng">
         <li class="menu">
           <a href="#">바라보다</a>
@@ -65,3 +90,6 @@
       </div>
     </div>
   </div>
+  <script src="/renewal/js/index.js"></script>
+</body>
+
