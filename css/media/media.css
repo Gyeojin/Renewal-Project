@@ -6,6 +6,7 @@
 }
 
 @media screen and (max-width:985px){
+  .header .logo {width: 25%;}
   .header {height: 150px;}
   .header .nav>li {padding: 0 6px;}
   .header .nav .submenu li {font-size: 13px;}
@@ -36,6 +37,7 @@
 }
 
 @media screen and (max-width:785px){
+  .header .logo {width: 20%;}
   .header .nav>li>a{font-size: 12px;}
   .header .nav .notice li a{font-size: 12px;}
   .slide .slide-img>a h2 {font-size: 18px;}
@@ -49,10 +51,19 @@
   
 }
 
-@media screen and (max-width:630px){
+@media screen and (max-width:650px){
+  .header .menu_icon{display: block;}
+  .header .logo {width: 35%; position: absolute; left: 50%; transform: translateX(-50%);}
+  .header .icon {position: absolute; right: 5%;}
+  .header .icon a {padding: 0 10px;}
+  .header .icon a i{font-size: 18px;}
+  .header .nav{display: none;}
+  .header .icon .my {display: none;}
+  
   .slide {padding-top: calc(300 / 490 * 100%);}
   .slide .slide-img {top: 10%;}
-  .slide .slide-img>a h2{font-size: 16px;}
+  .slide .slide-img>a h2{font-size: 14px;}
+  .slide .slide-img>a h4 {font-size: 10px;}
   .mid .mid-txt p:nth-child(2) {font-size: 28px;}
   .mid .mid-con .each-mid div h2 {font-size: 18px;}
   .mid .mid-con .each-mid div h4 {font-size: 12px;}

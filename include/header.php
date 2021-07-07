@@ -1,29 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I'm watching you</title>
 
-  <!-- Icon Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/renewal/lib/ionicons/css/ionicons.min.css">
-
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Serif+KR:wght@200;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <!-- Style Frameworks -->
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="/renewal/css/reset.css">
-  <link rel="stylesheet" href="/renewal/css/style.css">
-  <link rel="stylesheet" href="/renewal/css/media/media.css">
-</head>
-
-
-<body>
   <div class="header">
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu_icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile_nav">
+      <ul class="mobile_inner">
+        <li class="mobile_li">
+          <a href="#" class="mobile_tit eng">바라보다</a>
+          <ul class="mobile_sub_nav eng">
+            <li class="mobile_sub_li"><a href="#">소개</a></li>
+            <li class="mobile_sub_li"><a href="#">메뉴안내</a></li>
+          </ul>
+        </li>
+        <li class="mobile_li">
+          <a href="#" class="mobile_tit eng">만나다</a>
+          <ul class="mobile_sub_nav eng">
+            <li class="mobile_sub_li"><a href="#">오시는 길</a></li>
+          </ul>
+        </li>
+        <li class="mobile_li">
+          <a href="#" class="mobile_tit eng">쇼핑하다</a>
+          <ul class="mobile_sub_nav eng">
+            <li class="mobile_sub_li"><a href="#">스페셜티</a></li>
+            <li class="mobile_sub_li"><a href="#">커피팩/선물세트</a></li>
+            <li class="mobile_sub_li"><a href="#">커피용품</a></li>
+            <li class="mobile_sub_li"><a href="#">바라보다 굿즈</a></li>
+          </ul>
+        </li>
+        <li class="mobile_li">
+          <a href="#" class="mobile_tit eng">마주보다</a>
+          <ul class="mobile_sub_nav eng">
+            <li class="mobile_sub_li"><a href="#">커피 매거진</a></li>
+            <li class="mobile_sub_li"><a href="#">질문하기</a></li>
+            <li class="mobile_sub_li"><a href="#">구매후기</a></li>
+            <li class="mobile_sub_li"><a href="#">공지사항</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <div class="center rel">
       <a href="http://localhost/renewal/" class="logo"><img src="/renewal/img/logo_baraboda.png" alt="logo"></a>
       <ul class="nav eng">
@@ -90,6 +110,5 @@
       </div>
     </div>
   </div>
-  <script src="/renewal/js/index.js"></script>
-</body>
+
 

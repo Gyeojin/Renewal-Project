@@ -23,6 +23,7 @@
 <body>
   <div class="wrapper">
     <section>
+      
       <?php
         include $_SERVER['DOCUMENT_ROOT']."/renewal/include/header.php";
       ?>
@@ -313,6 +314,12 @@
       
   
   </div>
+
+  <!-- jQuery Framework Load -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script src="/renewal/js/index.js"></script>
+  <!--Main jQuery File Load-->
+  <script src="/renewal/js/jq.index.js"></script>
 </body>
 </html>
