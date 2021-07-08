@@ -1,5 +1,7 @@
 .wrapper {width: 100%; height: auto; _overflow: hidden; /*overflow: 거의 다 작성이 된 뒤에 살려주는 태그*/}
 
+.overlay {position: fixed; width: 0; height: 100vh; left: 0; top: 0; background: #000; opacity: 0; z-index: 9999;}
+
 /* Section Style code */
 
 section {width: 100%; height: auto;}/*섹션은 부모 구분용으로 쓰기도 함*/
@@ -48,6 +50,14 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .header .topnav a {font-size: 17px; color: #fff; position: relative; display: block; font-weight: bold; text-transform: uppercase; padding-top: 5px;}
 .header .topnav a:after {content:''; position: absolute; display: block; width: 0; height: 3px; background:red; left: 0; right: 0; margin: auto; transition: all 0.4s; top: 61px;} /*의제태그 : 자신이 들어가는 a태그를 부모로 인식*/
 .header .topnav li:hover a:after {width: 100%;}
+.mobile_nav .mobile_inner {padding-left:5px;}
+.mobile_nav .mobile_inner .mobile_submenu {width: 100%;}
+.mobile_nav .mobile_inner .mobile_submenu li {width: 100%; display: flex; flex-direction: column; padding-top: 20px;}
+.mobile_nav .mobile_inner .mobile_submenu li a {display: block; font-size: 13px; font-weight: 300; color: #888; padding: 5px 20px;}
+.mobile_nav .mobile_inner .mobile-sns, .mobile_nav .mobile_inner .mobile-copyright{padding: 20px 0 0 20px;}
+.mobile_nav .mobile_inner .mobile-sns a {padding: 0 3px;}
+.mobile_nav .mobile_inner .mobile-sns a i {font-size: 16px;}
+.mobile_nav .mobile_inner .mobile-copyright p {font-size: 12px; font-weight: 300; color: #aaa;}
 
 
 /* header Style Code */

@@ -59,6 +59,8 @@
   .header .icon a i{font-size: 18px;}
   .header .nav{display: none;}
   .header .icon .my {display: none;}
+
+  .header .mobile_li .mobile_tit{padding: 10px 20px; font-weight: 400;}
   
   .slide {padding-top: calc(300 / 490 * 100%);}
   .slide .slide-img {top: 10%;}

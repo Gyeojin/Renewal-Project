@@ -1,4 +1,4 @@
-
+  <div class="overlay"></div>
   <div class="header">
 
     <!-- Mobile Menu Icon -->
@@ -42,6 +42,24 @@
             <li class="mobile_sub_li"><a href="#">공지사항</a></li>
           </ul>
         </li>
+        <li class="mobile_sub_li">
+          <ul class="mobile_submenu">
+            <li>
+              <a href="#">로그인</a>
+              <a href="#">회원가입</a>
+              <a href="#">장바구니</a>
+              <a href="#">주문 조회</a>
+              <a href="#">마이 페이지</a>
+            </li>
+          </ul>
+        </li>
+        <div class="mobile-sns">
+          <a href="#"><i class="ion-social-instagram"></i></a>
+          <a href="#"><i class="ion-social-facebook"></i></a>
+        </div>
+        <div class="mobile-copyright">
+          <p>Copyright(c) 바라보다</p>
+        </div>
       </ul>
     </nav>
     <div class="center rel">
@@ -110,5 +128,3 @@
       </div>
     </div>
   </div>
-
-
