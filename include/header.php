@@ -12,20 +12,29 @@
     <nav class="mobile_nav">
       <ul class="mobile_inner">
         <li class="mobile_li">
-          <a href="#" class="mobile_tit eng">바라보다</a>
+          <a href="#" class="mobile_tit eng">
+            바라보다
+            <i class="fa fa-chevron-down"></i>
+          </a>
           <ul class="mobile_sub_nav eng">
             <li class="mobile_sub_li"><a href="#">소개</a></li>
             <li class="mobile_sub_li"><a href="#">메뉴안내</a></li>
           </ul>
         </li>
         <li class="mobile_li">
-          <a href="#" class="mobile_tit eng">만나다</a>
+          <a href="#" class="mobile_tit eng">
+            만나다
+            <i class="fa fa-chevron-down"></i>
+          </a>
           <ul class="mobile_sub_nav eng">
             <li class="mobile_sub_li"><a href="#">오시는 길</a></li>
           </ul>
         </li>
         <li class="mobile_li">
-          <a href="#" class="mobile_tit eng">쇼핑하다</a>
+          <a href="#" class="mobile_tit eng">
+            쇼핑하다
+            <i class="fa fa-chevron-down"></i>
+          </a>
           <ul class="mobile_sub_nav eng">
             <li class="mobile_sub_li"><a href="#">스페셜티</a></li>
             <li class="mobile_sub_li"><a href="#">커피팩/선물세트</a></li>
@@ -34,7 +43,10 @@
           </ul>
         </li>
         <li class="mobile_li">
-          <a href="#" class="mobile_tit eng">마주보다</a>
+          <a href="#" class="mobile_tit eng">
+            마주보다
+            <i class="fa fa-chevron-down"></i>
+          </a>
           <ul class="mobile_sub_nav eng">
             <li class="mobile_sub_li"><a href="#">커피 매거진</a></li>
             <li class="mobile_sub_li"><a href="#">질문하기</a></li>

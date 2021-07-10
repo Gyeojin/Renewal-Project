@@ -1,6 +1,6 @@
 .wrapper {width: 100%; height: auto; _overflow: hidden; /*overflow: 거의 다 작성이 된 뒤에 살려주는 태그*/}
 
-.overlay {position: fixed; width: 0; height: 100vh; left: 0; top: 0; background: #000; opacity: 0; z-index: 9999;}
+.overlay {position: fixed; width: 100%; height: 100vh; left: 0; top: 0; background: #000; display: none; opacity: 0.5; z-index:1;}
 
 /* Section Style code */
 
@@ -12,7 +12,7 @@ section div.four-layout {width: 100%; height: auto; display: flex; flex-wrap: wr
 section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 
 .rel{position: relative; display: flex; justify-content: space-between; align-items: center;}
-.header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 200px; z-index:999999; background-color: transparent; position: absolute; transition: all 0.5s;}
+.header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 200px; background-color: transparent; position: absolute; transition: all 0.5s; z-index: 1;}
 .fixed-nav {width: 100%; top: 0; left:0; height: 100px; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:99;} /*스크롤 이벤트 클래스 - box에 추가*/
 
 /* Mobile Menu Icon Style Code */
@@ -25,17 +25,15 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .header .menu_icon.active span:nth-child(3){animation-delay: 0.4s;}
 
 /* Mobile Navigation Style Code */
-.header .mobile_nav {width: 50%; height: 100vh; background: #fff; position: fixed; left: 0; top: 0; z-index: 99;}
+.header .mobile_nav {width: 50%; height: 100vh; background: #fff; position: fixed; left: -50%; top: 0; z-index: 9999;}
 .header .mobile_inner {width: 100%; height: auto; padding-top: 30px;}
 .header .mobile_inner .mobile_li {position: relative;}
 .header .mobile_inner .mobile_logo_box {width: 100%; display: flex; justify-content: center; padding: 10px 0;}
 /* .header .mobile_inner .mobile_logo_box .mobile_logo{display: block; width: 60px; height: 40px; background: url(../img/monav_logo.png) no-repeat center center; background-size: cover;} */
 
-.header .mobile_li .mobile_tit {display: block; padding: 15px; font-size: 16px; font-weight: 300; color: #000; position: relative;}
-.header .mobile_li .mobile_tit:before {content:''; display: block; width: 10px; height: 2px; background: #000; position: absolute; top: 50%; right: 27px;}
-.header .mobile_li .mobile_tit:after {content:''; display: block; width: 10px; height: 2px; background: #000; position: absolute; top: 50%; right: 27px; transform: rotate(90deg);}
-.header .mobile_li .mobile_tit.rotate:before{transform: rotate(45deg);}
-.header .mobile_li .mobile_tit.rotate:after{transform: rotate(135deg);}
+.header .mobile_li .mobile_tit {display: block; padding: 8px 15px; font-size: 16px; font-weight: 300; color: #000; position: relative;}
+.header .mobile_li .mobile_tit i {display: block; position: absolute; top: 50%; transform: translateY(-50%); right: 27px; color: #bbb;}
+.header .mobile_li .mobile_tit i.rotate{transform: rotate(180deg);}
 
 /*Mobile Sub Navigation Style code*/
 .header .mobile_sub_nav {width: 100%; height: auto; padding: 0 15px 15px 20px; display: none;}
@@ -53,8 +51,8 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .mobile_nav .mobile_inner {padding-left:5px;}
 .mobile_nav .mobile_inner .mobile_submenu {width: 100%;}
 .mobile_nav .mobile_inner .mobile_submenu li {width: 100%; display: flex; flex-direction: column; padding-top: 20px;}
-.mobile_nav .mobile_inner .mobile_submenu li a {display: block; font-size: 13px; font-weight: 300; color: #888; padding: 5px 20px;}
-.mobile_nav .mobile_inner .mobile-sns, .mobile_nav .mobile_inner .mobile-copyright{padding: 20px 0 0 20px;}
+.mobile_nav .mobile_inner .mobile_submenu li a {display: block; font-size: 13px; font-weight: 300; color: #888; padding: 5px 15px;}
+.mobile_nav .mobile_inner .mobile-sns, .mobile_nav .mobile_inner .mobile-copyright{padding: 20px 0 0 15px;}
 .mobile_nav .mobile_inner .mobile-sns a {padding: 0 3px;}
 .mobile_nav .mobile_inner .mobile-sns a i {font-size: 16px;}
 .mobile_nav .mobile_inner .mobile-copyright p {font-size: 12px; font-weight: 300; color: #aaa;}

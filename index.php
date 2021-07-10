@@ -257,7 +257,7 @@
             <div class="phone">
               <h3 class="eng">문의 및 안내</h3>
               <h2 class="eng">031-000-0000</h2>
-              <p>평일 10:00 ~ 16:00 / 점심 12:00 ~ 13:00<br>(토, 일, 공휴일 휴무)</p>
+              <p>평일 10:00 ~ 16:00<br>점심 12:00 ~ 13:00<br>(토, 일, 공휴일 휴무)</p>
               <a href="#"><i class="ion-social-instagram"></i></a>
               <a href="#"><i class="ion-social-facebook"></i></a>
             </div>
