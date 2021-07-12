@@ -210,7 +210,29 @@ footer {width: 100%;}
 
 
 /* Detail Page Style Code */
-.detail-box-top {width: 100%; display: flex; align-items: center; justify-content: space-between;}
-.detail-box-top .product-image {width: 50%;}
-.detail-box-top .product-image img{width: 100%;}
-.detail-box-top .product-txt {width: 50%;}
+.detail-center {width: 100%; max-width: 1280px; margin: auto; position: relative;}
+.detail-box-top {width: 100%; display: flex; align-items: center; justify-content: space-between; position: absolute; top: 200px;}
+.detail-box-top .product-image {width: 60%; margin-left: 50px;}
+.detail-box-top .product-image img{width: 100%; border: 1px solid #efefef;}
+.detail-box-top .product-txt {width: 50%; margin: 0 80px;}
+.detail-box-top .product-txt h2 {font-size: 20px; color: #555; font-weight: 400;}
+.detail-box-top .product-txt h4 {font-size: 14px; color: #555; opacity: 0.7; font-weight: 300; padding: 10px 0 15px 0; border-bottom: 2px solid #ccc;}
+.detail-box-top .product-txt .price {font-size: 17px; font-weight: 400; padding: 20px 0 40px 0;}
+.detail-box-top .product-txt .choice-box {width: 100%;}
+.detail-box-top .product-txt .qua-text {width: 100%; height: auto; display: flex; align-items: center;}
+.detail-box-top .product-txt .qua-text img {width: 14px; height: 14px;}
+.detail-box-top .product-txt .qua-text p {font-size: 11px; color: #f76560; padding: 0 0 0 5px;}
+.detail-box-top .product-txt .choice-box .checkbox {width: 95%; background: #f9f9f9; margin: 30px auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;}
+.detail-box-top .product-txt .quantity {width: 40%;}
+.detail-box-top .product-txt .quantity form {display: flex; align-items: center;}
+.detail-box-top .product-txt .quantity form input {width: 30px; height: 25px;}
+.detail-box-top .product-txt .quantity form .price-txt {font-size: 12px; padding-left: 50px;}
+.detail-box-top .product-txt .total-price {text-align: right}
+.detail-box-top .product-txt .total-price span {font-weight: 300;}
+.detail-box-top .total-price .total-price-detail{padding-left: 5px;}
+.detail-box-top .total-price .total-price-detail strong{font-size: 21px; font-weight: 500;}
+.detail-box-top .product-txt .total-btns {width: 100%; display: flex; justify-content: space-between; padding: 20px 0;}
+.detail-box-top .product-txt .total-btns button {width: 33%; font-size: 13px; padding: 15px 0; background: #fff; border: 1px solid #d1d1d1; border-radius: 3px; font-weight: 600;}
+.detail-box-top .product-txt .total-btns button:hover {border: 1px solid #333;}
+.detail-box-top .product-txt .total-btns
+button:nth-child(1) {background: #333; color: #fff;}
