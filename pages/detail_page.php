@@ -71,3 +71,9 @@
       </section>
     </div>
   </div>
+  <?php
+    include $_SERVER['DOCUMENT_ROOT']."/renewal/include/footer.php";
+  ?>
+
+  <script src="/renewal/js/index.js"></script>
+</body>

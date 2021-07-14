@@ -1,4 +1,4 @@
-.wrapper {width: 100%; height: auto; _overflow: hidden; /*overflow: 거의 다 작성이 된 뒤에 살려주는 태그*/}
+.wrapper {width: 100%; height: 100vh; _overflow: hidden; /*overflow: 거의 다 작성이 된 뒤에 살려주는 태그*/}
 
 .overlay {position: fixed; width: 100%; height: 100vh; left: 0; top: 0; background: #000; display: none; opacity: 0.5; z-index:1;}
 
@@ -174,7 +174,7 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .magazine .magazine-con .con-detailbox:nth-child(2)>a{background-image: url(/renewal/img/magazine-img2.jpg);}
 .magazine .magazine-con .con-detailbox:nth-child(3)>a{background-image: url(/renewal/img/magazine-img3.jpg);}.magazine .magazine-con .con-detailbox:nth-child(4)>a{background-image: url(/renewal/img/magazine-img4.jpg);}
 
-.video {opacity: 0; width: 100%; background: #f6f8fb; padding-bottom: 150px;border-bottom: 1px solid #eee;}
+.video {opacity: 0; width: 100%; background: #f6f8fb; padding-bottom: 150px;}
 .video .video-txt {width: 100%; text-align: center;}
 .video .video-txt p:nth-child(1){font-size: 12px; font-weight: 400; letter-spacing: 2px; padding-top: 100px; color: #41556b;}
 .video .video-txt p:nth-child(2){font-size: 34px; font-weight: 400; padding: 10px 0 10px; color: #41556b;}
@@ -184,8 +184,8 @@ section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 .video .video-box .vbox-detail {position: relative; _width: 1180px; padding-bottom: 45%; overflow: hidden; margin: auto;}
 .video .video-box iframe {position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%;}
 
-footer {width: 100%;}
-.bankinfo {width: 100%; background: #fff; padding: 40px 0;}
+footer {width: 100%; padding-top: 70px; background: #f6f8fb;}
+.bankinfo {width: 100%; background: #fff; padding: 40px 0; border-top: 1px solid #eee;}
 .bankinfo .top {width: 100%; display: flex; align-items: center; text-align: center;}
 .bankinfo .top ul {width: 33.33%;}
 .bankinfo .top ul li {width: 100%;}
