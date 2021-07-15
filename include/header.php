@@ -78,7 +78,7 @@
       <a href="http://localhost/renewal/" class="logo"><img src="/renewal/img/logo_baraboda.png" alt="logo"></a>
       <ul class="nav eng">
         <li class="menu">
-          <a href="#">바라보다</a>
+          <a href="/renewal/pages/renew_pro_insert_form.php">바라보다</a>
           <ul class="submenu">
             <li>
               <a href="#">소개</a>

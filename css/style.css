@@ -5,6 +5,7 @@
 /* Section Style code */
 
 section {width: 100%; height: auto;}/*섹션은 부모 구분용으로 쓰기도 함*/
+section.pro-insert{width: 100%; height: 100%;}
 section div.one-layout {width: 100%; height: 100px; background: #999;}
 section div.three-layout {width: 100%; height: auto; display: flex; flex-wrap: wrap;}
 section div.three-layout>div {width: 33.33%; height: 100px; border: 1px solid;}
@@ -12,7 +13,7 @@ section div.four-layout {width: 100%; height: auto; display: flex; flex-wrap: wr
 section div.four-layout>div {width: 25%; height: 100px; border: 1px solid;}
 
 .rel{position: relative; display: flex; justify-content: space-between; align-items: center;}
-.header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 200px; background-color: transparent; position: absolute; transition: all 0.5s; z-index: 1;}
+.header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 200px; background-color: transparent; position: fixed; transition: all 0.5s; z-index: 1;}
 .fixed-nav {width: 100%; top: 0; left:0; height: 100px; position: fixed; background-color:rgba(255,255,255,0.8); box-shadow: 0 3px 7px rgba(0, 0, 0, 10%); z-index:99;} /*스크롤 이벤트 클래스 - box에 추가*/
 
 /* Mobile Menu Icon Style Code */
@@ -236,3 +237,6 @@ footer {width: 100%; padding-top: 70px; background: #f6f8fb;}
 .detail-box-top .product-txt .total-btns button:hover {border: 1px solid #333;}
 .detail-box-top .product-txt .total-btns
 button:nth-child(1) {background: #333; color: #fff;}
+
+
+.pro_insert {width: 100%; height: auto; position: relative; top: 200px;}

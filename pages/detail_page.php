@@ -22,7 +22,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <section>
+    <section class="detail-page">
       <?php
         include $_SERVER['DOCUMENT_ROOT']."/renewal/include/header.php";
       ?>
