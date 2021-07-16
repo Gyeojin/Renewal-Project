@@ -33,7 +33,7 @@
         <div class="center">
           <form action="#">
             <p>
-              <select name="pro_select" id="">
+              <select name="renew_pro_select" id="">
                 <option value="coffee">coffee</option>
                 <option value="acc">acc</option>
               </select>
