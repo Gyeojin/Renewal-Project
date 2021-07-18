@@ -8,7 +8,7 @@
 
   <!-- Icon Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="/renewal/lib/ionicons/css/ionicons.min.css">
 
 
   <!-- Google Fonts -->
@@ -31,7 +31,7 @@
 
       <section class="pro_insert">
         <div class="center">
-          <form action="#">
+          <form action="/renewal/php/renew_pro_insert.php" method="post" class="renew_pro_insertform" enctype="multipart/form-data">
             <p>
               <select name="renew_pro_select" id="">
                 <option value="coffee">coffee</option>
@@ -42,14 +42,10 @@
             <p>상품 요약 : <textarea name="renew_pro_desc"></textarea></p>
             <p>상품 가격 : <input type="text" name="renew_pro_pri"></p>
             <p>상품 이미지 : <input type="file" name="renew_pro_img"></p>
-            <button type="button">상품 입력</button>
+            <button type="submit">상품 입력</button>
           </form>
         </div>
       </section>
-
-
-
-
     </section>
 
     <?php
