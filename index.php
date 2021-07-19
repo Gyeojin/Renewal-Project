@@ -114,21 +114,6 @@
 
 
     <section class="best-item">
-      <?php
-
-        include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
-        $sql = "SELECT * FROM renew_pro ORDER BY renew_idx DESC";
-
-        $detail_result = mysqli_query($dbConn, $sql);
-
-        while($detail_row = mysqli_fetch_array($detail_result)){
-          $detai_row_idx = $detail_row['renew_idx'];
-          $detail_row_tit = $detail_row['renew_name'];
-          $detail_row_desc = $detail_row['renew_desc'];
-          $detail_row_pri = $detail_row['renew_pri'];
-          $detail_row_img = $detail_row['renew_img'];
-        }
-      ?>
       <div class="center">
         <div class="best-txt">
           <p class="eng">Baraboda Specialty Coffee</p>
@@ -142,16 +127,35 @@
           </div>
           <div class="best-detailbox">
             <div class="best-detail">
+            <?php
+
+              include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
+              $sql = "SELECT * FROM renew_pro ORDER BY renew_idx DESC";
+
+              $detail_result = mysqli_query($dbConn, $sql);
+
+              while($detail_row = mysqli_fetch_array($detail_result)){
+                $detai_row_idx = $detail_row['renew_idx'];
+                $detail_row_tit = $detail_row['renew_name'];
+                $detail_row_desc = $detail_row['renew_desc'];
+                $detail_row_pri = $detail_row['renew_pri'];
+                $detail_row_img = $detail_row['renew_img'];
+              ?>
+              <!-- Loop contents -->
               <div class="detail-con">
                 <div class="detail-img">
-                  <a href="/renewal/pages/detail_page.php?renew_idx=<?=$detai_row_idx?>"><img src="/renewal/img/<?=$detail_row_img?>" alt="best-item"></a>
+                  <a href="/renewal/pages/detail_page.php?renew_idx=<?=$detai_row_idx?>"><img src="/renewal/img/product_image/<?=$detail_row_img?>" alt="best-item"></a>
                   <span><p class="eng">BEST1</p></span>
                 </div>
                 <h2 class="eng"><?=$detail_row_tit?></h2>
                 <h4><?=$detail_row_desc?></h4>
                 <h3><?=$detail_row_pri?>원</h3>
               </div>
-              <div class="detail-con">
+              <!-- End of Loop contents -->
+              <?php
+                }
+              ?>
+              <!-- <div class="detail-con">
                 <div class="detail-img">
                   <a href="#"><img src="/renewal/img/best-con2.jpg" alt="best-item"></a>
                   <span><p class="eng">BEST2</p></span>
@@ -168,37 +172,8 @@
                 <h2 class="eng">상품이름</h2>
                 <h4>상품설명</h4>
                 <h3>00,000원</h3>
-              </div>
+              </div> -->
             </div>
-            <!-- <div class="best-detail">
-              <div class="detail-con">
-                <div class="detail-img">
-                  <a href="#"><img src="/renewal/img/best-con4.jpg" alt="best-item"></a>
-                  <span><p class="eng">BEST1</p></span>
-                </div>
-                <h2 class="eng">상품이름</h2>
-                <h4>상품설명</h4>
-                <h3>00,000원</h3>
-              </div>
-              <div class="detail-con">
-                <div class="detail-img">
-                  <a href="#"><img src="/renewal/img/best-con5.jpg" alt="best-item"></a>
-                  <span><p class="eng">BEST2</p></span>
-                </div>
-                <h2 class="eng">상품이름</h2>
-                <h4>상품설명</h4>
-                <h3>00,000원</h3>
-              </div>
-              <div class="detail-con">
-                <div class="detail-img">
-                  <a href="#"><img src="/renewal/img/best-con6.jpg" alt="best-item"></a>
-                  <span><p class="eng">BEST3</p></span>
-                </div>
-                <h2 class="eng">상품이름</h2>
-                <h4>상품설명</h4>
-                <h3>00,000원</h3>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
