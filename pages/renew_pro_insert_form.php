@@ -31,6 +31,10 @@
 
       <section class="pro_insert">
         <div class="center">
+          <div class="mid-txt">
+            <span></span>
+            <p class="eng">Product Insert Page</p>
+          </div>
           <form action="/renewal/php/renew_pro_insert.php" method="post" class="renew_pro_insertform" enctype="multipart/form-data">
             <p>
               <select name="renew_pro_select" id="">
@@ -38,7 +42,7 @@
                 <option value="acc">acc</option>
               </select>
             </p>
-            <p>상품 이름 : <input type="text" name="renew_pro_name"></p>
+            <p><h2>상품 이름</h2><input type="text" name="renew_pro_name"></p>
             <p>상품 요약 : <textarea name="renew_pro_desc"></textarea></p>
             <p>상품 가격 : <input type="text" name="renew_pro_pri"></p>
             <p>상품 이미지 : <input type="file" name="renew_pro_img"></p>
