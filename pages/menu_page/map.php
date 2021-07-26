@@ -20,55 +20,33 @@
   <link rel="stylesheet" href="/renewal/css/style.css">
   <link rel="stylesheet" href="/renewal/css/media/media.css">
 </head>
-
 <body>
-  <div class="wrapper">
-    <section class="pro-insert">
-
+  <div class="map-wrapper">
+    <section class="detail-page">
       <?php
         include $_SERVER['DOCUMENT_ROOT']."/renewal/include/header.php";
       ?>
-
-      <section class="pro_insert">
-        <div class="center max-width">
-          <div class="mid-txt">
-            <p class="eng">Product Insert Page</p>
-          </div>
-          <form action="/renewal/php/renew_pro_insert.php" method="post" class="renew_pro_insertform" enctype="multipart/form-data">
-            <p>
-              <select name="renew_pro_select" id="">
-                <option value="coffee">coffee</option>
-                <option value="acc">acc</option>
-              </select>
-            </p>
-            <div>
-              <h2>상품 이름</h2><input type="text" name="renew_pro_name">
-            </div>
-            <div class="pro_textarea">
-              <h2>상품 요약</h2><textarea name="renew_pro_desc"></textarea>
-            </div>
-            <div>
-              <h2>상품 가격</h2><input type="text" name="renew_pro_pri">
-            </div>
-            <div>
-              <h2>상품 이미지</h2><input type="file" name="renew_pro_img">
-            </div>
-            <button type="submit">상품 입력</button>
-          </form>
+      <div class="map-center">
+        <div class="mid-txt map-padding">
+          <p class="eng">Baraboda Map</p>
+          <p class="eng">오시는 길</p>
+          <p>
+          바라보다는 나무가 있고, 바람이 기분 좋게 부는 이 곳에 있어요.
+          </p>
         </div>
-      </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3267843487215!2d127.29395881537845!3d37.52379337980585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb332a11e3c9b%3A0x83c763487046d484!2z7Lm07Y6YIOuwlOudvOuztOuLpA!5e0!3m2!1sko!2skr!4v1627286637042!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </section>
+  </div>
 
-    <?php
-      include $_SERVER['DOCUMENT_ROOT']."/renewal/include/footer.php";
-    ?>
-      
-  </div>    
+  <?php
+    include $_SERVER['DOCUMENT_ROOT']."/renewal/include/footer.php";
+  ?>
+
   <!-- jQuery Framework Load -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script src="/renewal/js/fixheader.js"></script>
   <!--Main jQuery File Load-->
   <script src="/renewal/js/jq.index.js"></script>
-
 </body>

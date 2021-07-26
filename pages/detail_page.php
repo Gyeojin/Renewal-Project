@@ -29,20 +29,37 @@
     </section>
     <div class="detail-center">
       <section class="detail-box-top">
+
+        <?php
+          include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
+          
+          $renew_pro_idx = $_GET['renew_idx'];
+
+          $sql1 = "SELECT * FROM renew_pro WHERE renew_idx='{$renew_pro_idx}'";
+
+          $renew_result = mysqli_query($dbConn, $sql1);
+          $renew_result_row = mysqli_fetch_array($renew_result);
+
+          $renew_detail_idx = $renew_result_row['renew_idx'];
+          $renew_detail_name = $renew_result_row['renew_name'];
+          $renew_detail_desc = $renew_result_row['renew_desc'];
+          $renew_detail_pri = $renew_result_row['renew_pri'];
+          $renew_detail_img = $renew_result_row['renew_img'];
+        ?>
         <div class="product-image">
-          <img src="/renewal/img/product_01.jpg" alt="">
+          <img src="/renewal/img/<?=$renew_detail_img?>" alt="">
         </div>
         <div class="product-txt">
-          <h2 class="eng">[칼리타] FP 102 필터 브라운</h2>
-          <h4>2~4인용 100매</h4>
-          <h3 class="price">4,900원</h3>
+          <h2 class="eng"><?=$renew_detail_name?></h2>
+          <h4><?=$renew_detail_desc?></h4>
+          <h3 class="price"><?=$renew_detail_pri?>원</h3>
           <div class="choice-box">
             <div class="qua-text">
               <img src="/renewal/img/ico_info.gif" alt="">
               <p>수량을 선택해주세요.</p>
             </div>
             <div class="checkbox">
-              <span class="checkbox-tit">[칼리타] FP 102 필터 브라운</span>
+              <span class="checkbox-tit"><?=$renew_detail_name?></span>
               <span class="quantity">
                 <form>
                   <input type="text" value="1" name="quantity"></input>
@@ -50,7 +67,7 @@
                     <a href="#"><img src="/renewal/img/btn_count_up.gif" alt="수량증가"></a>
                     <a href="#"><img src="/renewal/img/btn_count_down.gif" alt="수량감소"></a>
                   </span>
-                  <span class="price-txt">9,800원</span>
+                  <span class="price-txt"><?=$renew_detail_pri?></span>
                 </form>
               </span>
             </div>

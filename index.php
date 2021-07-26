@@ -79,12 +79,12 @@
         </div>
         <div class="mid-con">
           <div class="each-mid">
-            <a href="#" class="con1">
+            <a href="/renewal/pages/menu_page/map.php" class="con1">
               <img src="/renewal/img/middle_img1.png" alt="midcontent">
               <div>
                 <h2 class="eng">MEET BARABODA</h2>
                 <h4>카페 바라보다의 위치를 확인하세요.</h4>
-                <a href="#" class="eng">view more &#62;</a>
+                <a href="/renewal/pages/menu_page/map.php" class="eng">view more &#62;</a>
               </div>
             </a>
           </div>
@@ -140,6 +140,7 @@
                 $detail_row_desc = $detail_row['renew_desc'];
                 $detail_row_pri = $detail_row['renew_pri'];
                 $detail_row_img = $detail_row['renew_img'];
+
               ?>
               <!-- Loop contents -->
               <div class="detail-con">

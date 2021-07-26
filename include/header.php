@@ -27,7 +27,7 @@
             <i class="fa fa-chevron-down"></i>
           </a>
           <ul class="mobile_sub_nav eng">
-            <li class="mobile_sub_li"><a href="#">오시는 길</a></li>
+            <li class="mobile_sub_li"><a href="/renewal/pages/menu_page/map.php">오시는 길</a></li>
           </ul>
         </li>
         <li class="mobile_li">
@@ -87,10 +87,10 @@
           </ul>
         </li>
         <li class="menu">
-          <a href="#">만나다</a>
+          <a href="/renewal/pages/menu_page/map.php">만나다</a>
           <ul class="submenu">
             <li>
-              <a href="#">오시는 길</a>
+              <a href="/renewal/pages/menu_page/map.php">오시는 길</a>
             </li>
           </ul>
         </li>
