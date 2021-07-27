@@ -29,31 +29,32 @@
         include $_SERVER['DOCUMENT_ROOT']."/renewal/include/header.php";
       ?>
 
-      <section class="renew_mem_insert">
+      <section class="pro_insert">
         <div class="center max-width">
-          <div class="renew_mem_tit">
-            <p class="eng">로그인</p>
+          <div class="mid-txt">
+            <p class="eng">회원가입</p>
           </div>
-          <form action="/renewal/php/login.php" method="post" class="renew_mem_insertform">
-            <div class="id_pass">
-              <div>
-                <h2>아이디</h2><input type="text" name="renew_mem_id" placeholder="아이디">
-              </div>
-              <div>
-                <h2>비밀번호</h2><input type="password" name="renew_mem_pass" placeholder="비밀번호">
-              </div>
+          <form action="/renewal/php/renew_pro_insert.php" method="post" class="renew_pro_insertform" enctype="multipart/form-data">
+            <p>
+              <select name="renew_pro_select" id="">
+                <option value="coffee">coffee</option>
+                <option value="acc">acc</option>
+              </select>
+            </p>
+            <div>
+              <h2>상품 이름</h2><input type="text" name="renew_pro_name">
             </div>
-            <button type="button">로그인</button>
+            <div class="pro_textarea">
+              <h2>상품 요약</h2><textarea name="renew_pro_desc"></textarea>
+            </div>
+            <div>
+              <h2>상품 가격</h2><input type="text" name="renew_pro_pri">
+            </div>
+            <div>
+              <h2>상품 이미지</h2><input type="file" name="renew_pro_img">
+            </div>
+            <button type="submit">상품 입력</button>
           </form>
-          <div class="search_idpw">
-            <a href="#">아이디 찾기</a>
-            <a href="#">비밀번호 찾기</a>
-          </div>
-          <div class="join">
-            <p class="join_tit">아직 바라보다의 회원이 아니신가요?</p>
-            <p class="join_sub">회원가입하고 다양한 혜택과 서비스를 이용해 보세요!</p>
-            <a href="#">회원가입</a>
-          </div>
         </div>
       </section>
     </section>
