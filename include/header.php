@@ -57,7 +57,7 @@
         <li class="mobile_sub_li">
           <ul class="mobile_submenu">
             <li>
-              <a href="#">로그인</a>
+              <a href="/renewal/pages/login_form.php">로그인</a>
               <a href="#">회원가입</a>
               <a href="#">장바구니</a>
               <a href="#">주문 조회</a>
@@ -127,7 +127,7 @@
           <a href="#"><i class="ion-android-person"></i></a>
           <ul class="submenu">
             <li>
-              <a href="#">로그인</a>
+              <a href="/renewal/pages/login_form.php">로그인</a>
               <a href="#">회원가입</a>
               <a href="#">장바구니</a>
               <a href="#">주문 조회</a>
