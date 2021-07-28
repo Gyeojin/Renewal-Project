@@ -29,31 +29,38 @@
         include $_SERVER['DOCUMENT_ROOT']."/renewal/include/header.php";
       ?>
 
-      <section class="pro_insert">
+      <section class="join_insert">
         <div class="center max-width">
           <div class="mid-txt">
             <p class="eng">회원가입</p>
           </div>
-          <form action="/renewal/php/renew_pro_insert.php" method="post" class="renew_pro_insertform" enctype="multipart/form-data">
-            <p>
-              <select name="renew_pro_select" id="">
-                <option value="coffee">coffee</option>
-                <option value="acc">acc</option>
-              </select>
-            </p>
+          <form action="/renewal/php/join.php" method="post" class="renew_join_insertform" name="join_insertform">
             <div>
-              <h2>상품 이름</h2><input type="text" name="renew_pro_name">
-            </div>
-            <div class="pro_textarea">
-              <h2>상품 요약</h2><textarea name="renew_pro_desc"></textarea>
+              <b>아이디</b>
+              <div class="input_box">
+                <input type="text" name="renew_join_id" class="join_id">
+              </div>
+              <button type="button" class="join_id_check">중복체크</button>
             </div>
             <div>
-              <h2>상품 가격</h2><input type="text" name="renew_pro_pri">
+              <b>비밀번호</b>
+              <div class="input_box">
+                <input type="password" name="renew_join_pass">
+              </div>
             </div>
             <div>
-              <h2>상품 이미지</h2><input type="file" name="renew_pro_img">
+              <b>이름</b>
+              <div class="input_box">
+                <input type="text" name="renew_join_name">
+              </div>
             </div>
-            <button type="submit">상품 입력</button>
+            <div>
+              <b>이메일</b>
+              <div class="input_box">
+                <input type="text" name="renew_join_email">
+              </div>
+            </div>
+            <button type="button" class="join_button">회원가입</button>
           </form>
         </div>
       </section>
@@ -70,5 +77,57 @@
   <script src="/renewal/js/fixheader.js"></script>
   <!--Main jQuery File Load-->
   <script src="/renewal/js/jq.index.js"></script>
+  
+  <script>
+    //ajex(비동기)로 데이터베이스에서 id 중복체크하는 로직
+    $(function(){
+      $(".join_id_check").click(function(){
+        const id_value = $(".join_id").val();
+        $.ajax({
+          url : '/renewal/php/join_id_check.php',
+          type : 'get',
+          data : {id_value : id_value},
+          success : function(data){
+            alert(data);
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    const submitBtn = document.querySelector(".join_button");
+    const idCheck = document.querySelector(".join_id_check");
+    let checkId = false;
+
+    idCheck.addEventListener('click',function(){
+      checkId = true;
+    });
+
+    submitBtn.addEventListener('click',function(){
+      if(!document.join_insertform.renew_join_id.value){
+        alert('아이디를 입력해 주세요.');
+        return;
+      }
+      if(!document.join_insertform.renew_join_pass.value){
+        alert('비밀번호를 입력해 주세요.');
+        return;
+      }
+      if(!document.join_insertform.renew_join_name.value){
+        alert('이름을 입력해 주세요.');
+        return;
+      }
+      if(!document.join_insertform.renew_join_email.value){
+        alert('이메일을 입력해 주세요.');
+        return;
+      }
+      if(!checkId == true){
+        alert('아이디 중복체크를 눌러주세요.');
+        return;
+      }
+      document.join_insertform.submit();
+    });
+
+  </script>
 
 </body>

@@ -58,7 +58,7 @@
           <ul class="mobile_submenu">
             <li>
               <a href="/renewal/pages/login_form.php">로그인</a>
-              <a href="#">회원가입</a>
+              <a href="/renewal/pages/join_form.php">회원가입</a>
               <a href="#">장바구니</a>
               <a href="#">주문 조회</a>
               <a href="#">마이 페이지</a>
@@ -128,7 +128,7 @@
           <ul class="submenu">
             <li>
               <a href="/renewal/pages/login_form.php">로그인</a>
-              <a href="#">회원가입</a>
+              <a href="/renewal/pages/join_form.php">회원가입</a>
               <a href="#">장바구니</a>
               <a href="#">주문 조회</a>
               <a href="#">마이 페이지</a>
