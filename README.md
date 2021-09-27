@@ -5,9 +5,11 @@
 
 <br>
 
-![pf-content_fofo](https://user-images.githubusercontent.com/84562763/134626341-a407aa39-5201-43fc-a953-6916a6478eb7.jpg)
+![renewal_baraboda](https://user-images.githubusercontent.com/84562763/134869590-6d5fc819-4cc0-4cb0-96d2-c3ad36e4ea50.gif)
 
-<p align="center">
+<br>
+
+
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> &nbsp
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a> &nbsp
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/></a> &nbsp
@@ -15,7 +17,7 @@
 
 <br>
 <br>
-<p align="center">남양주 소재의 카페 '바라보다'의 공식 홈페이지를 클론 코딩한 사이트 입니다.<br>
+남양주 소재의 카페 '바라보다'의 공식 홈페이지를 클론 코딩한 사이트 입니다.<br>
 슬라이드와 기타 기능들을 순수 Javascript 로 작업하였습니다.
 <br>
 <br>
